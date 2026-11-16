@@ -1,0 +1,14 @@
+# Credenciais reais (nunca subir para o Git)
+.env
+
+# Arquivos de sistema
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor / temporarios
+.vscode/
+.idea/
+*.log
+*.tmp
+*.bak
