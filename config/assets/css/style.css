@@ -1,0 +1,230 @@
+/* =====================================================
+   FUTZONE - Estilos próprios
+   ===================================================== */
+
+   :root {
+    --verde: #00c853;
+    --verde-escuro: #00a844;
+    --preto: #0b0f0c;
+    --cinza-escuro: #151b17;
+    --cinza-claro: #f4f6f5;
+}
+
+body {
+    background-color: var(--cinza-claro);
+    color: #1c1f1d;
+}
+
+/* ---------- Menu ---------- */
+.navbar-futzone {
+    background-color: var(--preto);
+    border-bottom: 3px solid var(--verde);
+}
+
+.logo-futzone {
+    font-weight: 900;
+    letter-spacing: 2px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.logo-futzone span {
+    color: var(--verde);
+}
+
+.navbar-futzone .nav-link:hover {
+    color: var(--verde);
+}
+
+.badge-carrinho {
+    position: absolute;
+    top: 0;
+    right: -4px;
+    background-color: var(--verde);
+    color: var(--preto);
+    font-size: 0.65rem;
+}
+
+/* ---------- Botões ---------- */
+.btn-verde {
+    background-color: var(--verde);
+    border-color: var(--verde);
+    color: var(--preto);
+    font-weight: 700;
+}
+
+.btn-verde:hover {
+    background-color: var(--verde-escuro);
+    border-color: var(--verde-escuro);
+    color: #fff;
+}
+
+.btn-outline-claro {
+    border: 2px solid #fff;
+    color: #fff;
+    font-weight: 700;
+}
+
+.btn-outline-claro:hover {
+    background-color: #fff;
+    color: var(--preto);
+}
+
+/* ---------- Banner principal ---------- */
+.hero {
+    background:
+        linear-gradient(135deg, rgba(11, 15, 12, 0.95) 40%, rgba(0, 120, 50, 0.85)),
+        repeating-linear-gradient(90deg, #0b3d1e 0 60px, #0d4a24 60px 120px);
+    color: #fff;
+    padding: 90px 0;
+}
+
+.hero h1 {
+    font-size: clamp(2.2rem, 5vw, 3.8rem);
+    font-weight: 900;
+    text-transform: uppercase;
+    line-height: 1.05;
+}
+
+.hero h1 span {
+    color: var(--verde);
+}
+
+.hero p {
+    font-size: 1.15rem;
+    max-width: 520px;
+}
+
+/* ---------- Títulos de seção ---------- */
+.titulo-secao {
+    font-weight: 800;
+    text-transform: uppercase;
+    border-left: 6px solid var(--verde);
+    padding-left: 12px;
+}
+
+/* ---------- Cards de categoria ---------- */
+.card-categoria {
+    background-color: #fff;
+    border: 0;
+    border-radius: 12px;
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card-categoria:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    color: inherit;
+}
+
+.card-categoria .icone {
+    font-size: 2.5rem;
+    color: var(--verde-escuro);
+}
+
+/* ---------- Chamada para a loja ---------- */
+.chamada-loja {
+    background-color: var(--preto);
+    color: #fff;
+    border-radius: 16px;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.chamada-loja h2 {
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+/* ---------- Rodapé ---------- */
+.footer-futzone {
+    background-color: var(--preto);
+    color: #cfd8d2;
+    border-top: 3px solid var(--verde);
+}
+/* ---------- Cards de produto ---------- */
+.card-produto {
+    border: 0;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card-produto:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15) !important;
+}
+
+.card-produto .card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Aparece quando o produto ainda não tem foto */
+.sem-imagem {
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #1a1f1c, #0d4a24);
+    color: rgba(255, 255, 255, 0.4);
+    font-size: 3.5rem;
+}
+
+.selo-categoria {
+    background-color: var(--preto);
+    color: var(--verde);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.preco {
+    font-size: 1.4rem;
+    font-weight: 800;
+    color: var(--verde-escuro);
+}
+/* ---------- Página do produto ---------- */
+.sem-imagem-grande {
+    height: 380px;
+    font-size: 6rem;
+}
+
+.imagem-produto {
+    width: 100%;
+    max-height: 420px;
+    object-fit: cover;
+}
+
+.preco-grande {
+    font-size: 2.2rem;
+}
+/* ---------- Carrinho ---------- */
+.mini-img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.mini-sem-imagem {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #1a1f1c, #0d4a24);
+    color: rgba(255, 255, 255, 0.4);
+    font-size: 1.5rem;
+}
+
+.total-carrinho {
+    font-size: 2rem;
+    font-weight: 900;
+    color: var(--verde-escuro);
+}
+/* ---------- Login e cadastro ---------- */
+.card-auth {
+    border: 0;
+    border-radius: 14px;
+    border-top: 5px solid var(--verde);
+}
